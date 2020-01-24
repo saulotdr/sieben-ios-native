@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		491EEE8B238793DC007B79FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EEE8A238793DC007B79FC /* AppDelegate.swift */; };
 		491EEE8D238793DC007B79FC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EEE8C238793DC007B79FC /* RootViewController.swift */; };
-		491EEE8F238793DC007B79FC /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EEE8E238793DC007B79FC /* DataViewController.swift */; };
-		491EEE91238793DC007B79FC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EEE90238793DC007B79FC /* ModelController.swift */; };
 		491EEE94238793DC007B79FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491EEE92238793DC007B79FC /* Main.storyboard */; };
 		491EEE96238793E0007B79FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491EEE95238793E0007B79FC /* Assets.xcassets */; };
 		491EEE99238793E0007B79FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491EEE97238793E0007B79FC /* LaunchScreen.storyboard */; };
 		491EEEA4238793E1007B79FC /* siebenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EEEA3238793E1007B79FC /* siebenTests.swift */; };
+		4945E4D0238B9A68009023C7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4945E4CF238B9A67009023C7 /* WebKit.framework */; };
+		496F7DAA23CC3A8B004B00BD /* UIWebViewSearch.js in Resources */ = {isa = PBXBuildFile; fileRef = 496F7DA923CC3A8B004B00BD /* UIWebViewSearch.js */; };
+		496F7DAC23D1832F004B00BD /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F7DAB23D1832F004B00BD /* Credentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +32,6 @@
 		491EEE87238793DC007B79FC /* sieben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sieben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491EEE8A238793DC007B79FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		491EEE8C238793DC007B79FC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		491EEE8E238793DC007B79FC /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		491EEE90238793DC007B79FC /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		491EEE93238793DC007B79FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		491EEE95238793E0007B79FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491EEE98238793E0007B79FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +39,9 @@
 		491EEE9F238793E1007B79FC /* siebenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = siebenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		491EEEA3238793E1007B79FC /* siebenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siebenTests.swift; sourceTree = "<group>"; };
 		491EEEA5238793E1007B79FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4945E4CF238B9A67009023C7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		496F7DA923CC3A8B004B00BD /* UIWebViewSearch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = UIWebViewSearch.js; sourceTree = "<group>"; };
+		496F7DAB23D1832F004B00BD /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4945E4D0238B9A68009023C7 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 				491EEE89238793DC007B79FC /* sieben */,
 				491EEEA2238793E1007B79FC /* siebenTests */,
 				491EEE88238793DC007B79FC /* Products */,
+				4945E4CE238B9A67009023C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +85,14 @@
 		491EEE89238793DC007B79FC /* sieben */ = {
 			isa = PBXGroup;
 			children = (
+				496F7DA923CC3A8B004B00BD /* UIWebViewSearch.js */,
 				491EEE8A238793DC007B79FC /* AppDelegate.swift */,
 				491EEE8C238793DC007B79FC /* RootViewController.swift */,
-				491EEE8E238793DC007B79FC /* DataViewController.swift */,
-				491EEE90238793DC007B79FC /* ModelController.swift */,
 				491EEE92238793DC007B79FC /* Main.storyboard */,
 				491EEE95238793E0007B79FC /* Assets.xcassets */,
 				491EEE97238793E0007B79FC /* LaunchScreen.storyboard */,
 				491EEE9A238793E0007B79FC /* Info.plist */,
+				496F7DAB23D1832F004B00BD /* Credentials.swift */,
 			);
 			path = sieben;
 			sourceTree = "<group>";
@@ -100,6 +104,14 @@
 				491EEEA5238793E1007B79FC /* Info.plist */,
 			);
 			path = siebenTests;
+			sourceTree = "<group>";
+		};
+		4945E4CE238B9A67009023C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4945E4CF238B9A67009023C7 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +197,7 @@
 			files = (
 				491EEE99238793E0007B79FC /* LaunchScreen.storyboard in Resources */,
 				491EEE96238793E0007B79FC /* Assets.xcassets in Resources */,
+				496F7DAA23CC3A8B004B00BD /* UIWebViewSearch.js in Resources */,
 				491EEE94238793DC007B79FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,8 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				491EEE8D238793DC007B79FC /* RootViewController.swift in Sources */,
-				491EEE91238793DC007B79FC /* ModelController.swift in Sources */,
-				491EEE8F238793DC007B79FC /* DataViewController.swift in Sources */,
+				496F7DAC23D1832F004B00BD /* Credentials.swift in Sources */,
 				491EEE8B238793DC007B79FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +380,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TQ3PMYQT6;
 				INFOPLIST_FILE = sieben/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,6 +391,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sieben.docsystem.sieben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -385,7 +401,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TQ3PMYQT6;
 				INFOPLIST_FILE = sieben/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -393,6 +412,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sieben.docsystem.sieben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
