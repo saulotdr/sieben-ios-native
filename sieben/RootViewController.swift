@@ -12,7 +12,7 @@ import WebKit
 class RootViewController: UIViewController, UIPageViewControllerDelegate,
 UISearchBarDelegate, WKNavigationDelegate {
     
-    let USER_KEY = "user"
+    let USER_KEY = "user"	
     let PASSWORD_KEY = "password"
     let MAIN_PAGE = "Login"
     let TASKS_PAGE = "Tasks"
@@ -108,8 +108,12 @@ UISearchBarDelegate, WKNavigationDelegate {
     func getFromUserDefaults() -> Credentials? {
         let preferences = UserDefaults.standard
         let credentials = Credentials()
-        credentials.user = preferences.string(forKey: USER_KEY)!
-        credentials.password = preferences.string(forKey: PASSWORD_KEY)!
+        if let userKey = preferences.string(forKey: USER_KEY) {
+            credentials.user = userKey
+        }
+        if let passwordKey = preferences.string(forKey: PASSWORD_KEY) {
+            credentials.password = passwordKey
+        }
         print("getFromUserDefaults() user=" + credentials.user)
         print("getFromUserDefaults() password=" + credentials.password)
         return credentials
@@ -196,7 +200,6 @@ UISearchBarDelegate, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(UserDefaults.standard.dictionaryRepresentation())
         search.delegate = self
         webView.navigationDelegate = self
         
