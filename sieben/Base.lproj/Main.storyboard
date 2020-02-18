@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6fa-Jm-NQF">
-    <device id="retina6_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6fa-Jm-NQF">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,19 +37,19 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="N51-Ys-Sen" firstAttribute="top" secondItem="iAZ-4m-2z3" secondAttribute="top" id="056-o0-GwP"/>
-                            <constraint firstItem="hqh-DX-Z7W" firstAttribute="leading" secondItem="iAZ-4m-2z3" secondAttribute="leading" id="6Ap-AN-xxN"/>
+                            <constraint firstItem="hqh-DX-Z7W" firstAttribute="leading" secondItem="N51-Ys-Sen" secondAttribute="leading" id="46R-uX-Ypy"/>
                             <constraint firstItem="N51-Ys-Sen" firstAttribute="leading" secondItem="iAZ-4m-2z3" secondAttribute="leading" id="7yc-eV-51K"/>
                             <constraint firstItem="N51-Ys-Sen" firstAttribute="bottom" secondItem="iAZ-4m-2z3" secondAttribute="bottom" id="Kmx-mP-rnb"/>
                             <constraint firstItem="N51-Ys-Sen" firstAttribute="trailing" secondItem="iAZ-4m-2z3" secondAttribute="trailing" id="SEI-Kr-NNI"/>
-                            <constraint firstItem="hqh-DX-Z7W" firstAttribute="top" secondItem="iAZ-4m-2z3" secondAttribute="top" id="YFK-qL-915"/>
-                            <constraint firstItem="hqh-DX-Z7W" firstAttribute="trailing" secondItem="iAZ-4m-2z3" secondAttribute="trailing" id="gYm-ri-SrQ"/>
+                            <constraint firstItem="hqh-DX-Z7W" firstAttribute="top" secondItem="iAZ-4m-2z3" secondAttribute="top" id="c4a-vX-AGK"/>
+                            <constraint firstItem="hqh-DX-Z7W" firstAttribute="trailing" secondItem="N51-Ys-Sen" secondAttribute="trailing" id="oyb-Ls-yP2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iAZ-4m-2z3"/>
                     </view>
                     <toolbarItems>
                         <barButtonItem tag="-1" title="Voltar" image="arrow_back" id="0Vu-dM-TS3">
                             <connections>
-                                <action selector="back:" destination="703-4V-yAM" id="EtC-Fh-UZ6"/>
+                                <action selector="back:" destination="703-4V-yAM" id="RU9-I1-hWP"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="wcq-Lj-Ac7"/>
