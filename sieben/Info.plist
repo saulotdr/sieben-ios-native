@@ -46,7 +46,10 @@
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
-		<dict/>
+		<dict>
+			<key>homolog</key>
+			<string>http://docsystem5.clouddoc.com.br/SimplePortalHomolog/Login.html</string>
+		</dict>
 		<key>login</key>
 		<string>http://docsystem5.clouddoc.com.br/SimplePortal/Pages/Login.html</string>
 		<key>tasks</key>
