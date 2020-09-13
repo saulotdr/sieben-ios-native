@@ -48,12 +48,12 @@
 		<key>NSExceptionDomains</key>
 		<dict>
 			<key>homolog</key>
-			<string>http://docsystem5.clouddoc.com.br/SimplePortalHomolog/Login.html</string>
+			<string>http://dsenv01.cloudapp.net/SimplePortalHomolog/Login.html</string>
 		</dict>
 		<key>login</key>
-		<string>http://docsystem5.clouddoc.com.br/SimplePortal/Pages/Login.html</string>
+		<string>http://dsenv01.cloudapp.net/SimplePortal/Pages/Login.html</string>
 		<key>tasks</key>
-		<string>http://docsystem5.clouddoc.com.br/SimplePortal/Pages/Tasks.html</string>
+		<string>http://dsenv01.cloudapp.net/SimplePortal/Pages/Tasks.html</string>
 		<key>NSAllowsArbitraryLoadsInWebContent</key>
 		<true/>
 		<key>NSAllowsArbitraryLoads</key>
